@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
 
     // custom shortcodes
     eleventyConfig.addPairedShortcode('centerWindow', shortcodes.centerWindowShortcode);
+    eleventyConfig.addPairedShortcode('window', shortcodes.windowShortcode);
 
     // define input and output dirs
     return {
