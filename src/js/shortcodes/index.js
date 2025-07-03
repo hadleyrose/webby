@@ -1,0 +1,1 @@
+export {default as centerWindowShortcode} from './window.js';
