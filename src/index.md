@@ -7,6 +7,7 @@ description: landing page for hadleyrose webby
 
 
 {% window %}
+## *heading* **test**
 <div class="title-bar inactive">
     <div class="title-bar-text">hadleyrose.io</div>
     <div class="title-bar-controls">
@@ -22,6 +23,11 @@ description: landing page for hadleyrose webby
         <button>Cancel</button>
     </section>
 </div>
+{% endwindow %}
+
+{% window %}
+* My second window
+* With a list
 {% endwindow %}
 
 {% centerWindow %}
