@@ -5,6 +5,6 @@ title: hadleyrose
 description: landing page for hadleyrose webby
 ---
 
-{% window 'hadleyrose.io', , 'inactive'%}
+{% window 'hadleyrose.io', false, 'inactive'%}
 ### ✨Under Construction✨
 {% endwindow %}
