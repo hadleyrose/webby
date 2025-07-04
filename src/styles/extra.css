@@ -1,0 +1,27 @@
+* {
+    color: #fff;
+}
+body {
+    background-color: #ADCAB8;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    min-height: 100vmin;
+}
+h1 {
+    width: 100%;
+    top: 50%;
+    text-align: center;
+}
+a {
+    color:darkcyan;
+    font-weight: bold;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
