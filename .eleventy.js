@@ -7,7 +7,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("./src/js");
 
     // custom shortcodes
-    eleventyConfig.addPairedShortcode('centerWindow', shortcodes.centerWindowShortcode);
     eleventyConfig.addPairedShortcode('window', shortcodes.windowShortcode);
 
     // define input and output dirs
