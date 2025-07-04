@@ -1,6 +1,6 @@
 # `development` branch README
 
-This is the `development` branch for my website [hadleyrose.io](hadleyrose.io), where I'll test and troubleshoot new features and updates. 
+This is the `development` branch for my website [hadleyrose.io](http://hadleyrose.io), where I'll test and troubleshoot new features and updates. 
 
 Below, I'll track my next steps and ideas for the site.
 
