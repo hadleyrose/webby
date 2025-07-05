@@ -9,9 +9,12 @@ const scene = new THREE.Scene();
 const canvas = document.querySelector('canvas.webgl');
 
 // camera
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-camera.position.z = 5;
-scene.add(camera)
+const camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 1000 );
+camera.position.z = 6;
+camera.position.y = 2;
+camera.position.x = 3;
+camera.rotation.y = 45;
+scene.add(camera);
 
 // add my construction model from blender
 const loader = new GLTFLoader();
