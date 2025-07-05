@@ -26,7 +26,7 @@ Below, I'll track my next steps and ideas for the site.
 > I was then able to condense the window shortcodes into a [single shortcode](https://github.com/hadleyrose/webby/blob/0ffa4776d976ccaa6703129fcd3355f51e9ec044/src/js/shortcodes/window.js#L15).
 
 - [ ] Update shortcode to opt in and define window buttons
-- [ ] Add in drafted extra css
+- [x] Add in drafted [extra css](src/styles/extra.css)
 - [ ] Add in drafted three.js code and assets
 
 
