@@ -18,6 +18,9 @@ const loader = new GLTFLoader();
 loader.load('/assets/construction.glb', function (gltf){
   let myMesh = gltf.scene;
   console.log(myMesh);
+  // myMesh.traverse((mesh) => {
+  //   mesh.material = new THREE.MeshMatcapMaterial();
+  // });
   scene.add(myMesh);
 }, undefined, function (error) {
   console.error(error);
