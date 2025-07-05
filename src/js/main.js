@@ -39,7 +39,8 @@ scene.add(light4);
 // renderer
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
-  alpha: true
+  alpha: true,
+  depth: true
 });
 renderer.setSize( window.innerWidth, window.innerHeight );
 // renderer.outputColorSpace = THREE.SRGBColorSpace;
