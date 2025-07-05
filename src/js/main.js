@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // scene
 const scene = new THREE.Scene();
@@ -12,11 +13,15 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 camera.position.z = 5;
 scene.add(camera)
 
-// object
-const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshBasicMaterial( { color: '#000000' } );
-const cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+// add my construction model from blender
+const loader = new GLTFLoader();
+loader.load('/assets/construction.glb', function (gltf){
+  let myMesh = gltf.scene;
+  console.log(myMesh);
+  scene.add(myMesh);
+}, undefined, function (error) {
+  console.error(error);
+});
 
 // light
 const light = new THREE.AmbientLight(0xffffff);
