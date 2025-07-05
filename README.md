@@ -27,7 +27,7 @@ Below, I'll track my next steps and ideas for the site.
 
 - [ ] Update shortcode to opt in and define window buttons
 - [x] Add in drafted [extra css](src/styles/extra.css)
-- [ ] Add in drafted three.js code and assets
+- [x] Add in drafted three.js code and assets
 
 
 
