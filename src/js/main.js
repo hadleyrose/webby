@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // scene
 const scene = new THREE.Scene();
@@ -29,6 +30,9 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize( window.innerWidth, window.innerHeight );
 // renderer.outputColorSpace = THREE.SRGBColorSpace;
 document.body.appendChild( renderer.domElement );
+
+// add controls
+const controls = new OrbitControls(camera, renderer.domElement);
 
 function animate() {
   renderer.render( scene, camera );
