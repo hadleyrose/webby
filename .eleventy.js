@@ -9,6 +9,8 @@ export default (eleventyConfig) => {
     eleventyConfig.addWatchTarget("./src/styles");
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addWatchTarget("./src/assets");
+    eleventyConfig.addPassthroughCopy("./src/public");
+    eleventyConfig.addWatchTarget("./src/public");
 
     // custom shortcodes
     eleventyConfig.addPairedShortcode('window', windowShortcode);
@@ -17,7 +19,7 @@ export default (eleventyConfig) => {
     return {
         dir: {
             input: "src",
-            output: "public",
+            output: "_site",
         },
     };
 };
