@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
 export default defineConfig({
-    root: '_site',
+    root: 'public',
     build: {
-        outDir: '../public',
+        outDir: '../dist',
         emptyOutDir: true
     },
-    // publicDir: 'src',
+    publicDir: 'assets',
     assetsInclude: ["**/*.glb"]
 })
