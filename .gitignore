@@ -3,3 +3,10 @@
 
 # node modules
 node_modules/
+
+# everything in public except assets
+public/*
+!public/assets
+
+# src assets
+src/assets
