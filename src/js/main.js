@@ -29,6 +29,12 @@ loader.load('/assets/construction.glb', function (gltf){
 // light
 const light = new THREE.AmbientLight(0xffffff);
 scene.add(light);
+const light2 = new THREE.SpotLight('#EFCB99');
+scene.add(light2);
+const light3 = new THREE.DirectionalLight(0xffffff);
+scene.add(light3);
+const light4 = new THREE.HemisphereLight('#ffffff');
+scene.add(light4);
 
 // renderer
 const renderer = new THREE.WebGLRenderer({
