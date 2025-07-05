@@ -1,7 +1,7 @@
 // eleventy config
-const shortcodes = require('./src/js/shortcodes');
+import { windowShortcode } from './src/js/shortcodes/index.js';
 
-module.exports = function(eleventyConfig) {
+export default (eleventyConfig) => {
     // include js, css
     eleventyConfig.addPassthroughCopy("./src/js");
     eleventyConfig.addWatchTarget("./src/js");
@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("./src/styles");
 
     // custom shortcodes
-    eleventyConfig.addPairedShortcode('window', shortcodes.windowShortcode);
+    eleventyConfig.addPairedShortcode('window', windowShortcode);
 
     // define input and output dirs
     return {
