@@ -1,0 +1,1 @@
+export {window as windowShortcode} from './window.js';
