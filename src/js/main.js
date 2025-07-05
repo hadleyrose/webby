@@ -18,7 +18,7 @@ scene.add(camera);
 
 // add my construction model from blender
 const loader = new GLTFLoader();
-loader.load('construction.glb', function (gltf){
+loader.load('/construction.glb', function (gltf){
   let myMesh = gltf.scene;
   console.log(myMesh);
   // myMesh.traverse((mesh) => {
