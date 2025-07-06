@@ -16,6 +16,8 @@ h1 {
 }
 .window {
     background: rgba(192, 192, 192, 0.67);
+    max-height: 70%;
+    overflow-y: auto;
 }
 a {
     color:darkcyan;
