@@ -16,7 +16,10 @@ h1 {
 }
 .window {
     background: rgba(192, 192, 192, 0.67);
-    max-height: 70%;
+    max-height: 100vh;
+}
+.window-body {
+    max-height: 70vh;
     overflow-y: auto;
 }
 a {
