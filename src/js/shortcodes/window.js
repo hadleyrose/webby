@@ -24,7 +24,7 @@ export function window(content, titleBarTitle = 'test', center = true, type = "i
             <div class="title-bar-controls">
                 <button aria-label="Minimize"></button>
                 <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
+                <button id="Close" aria-label="Close"></button>
             </div>
         </div>
         <div class="window-body">
